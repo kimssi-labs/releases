@@ -1,0 +1,5 @@
+# GitHub는 릴리스마다 "Source code (zip/tar.gz)" 링크를 자동으로 붙이며 끌 수 없다.
+# 이 저장소는 설치 파일 배포 창구일 뿐 소스를 공개하지 않으므로, 아카이브에 아무것도
+# 담기지 않도록 모든 경로를 export-ignore 한다. 릴리스에 첨부된 자산에는 영향이 없다.
+* export-ignore
+.gitattributes export-ignore
