@@ -8,12 +8,17 @@ kimssi-labs 도구의 **설치 파일을 내려받는 곳**입니다.
 | 파일 | 설명 |
 |---|---|
 | `wmx3-eni-viewer-<버전>.vsix` | **WMX3ENIViewer** — WMX3 EtherCAT ENI 파일을 VS Code에서 해석·검증하는 확장 (구문 강조, 호버 디코드, 진단, 요약 뷰). VS Code 1.85 이상 |
+| `WMXSwitcher-Setup-<버전>.exe` | **WMX Switcher** — 한 PC에 설치된 WMX3/WMX2/MXR2 버전을 전환하고, 버전 간 파일을 비교·복사하며, 관련 레지스트리 값을 편집하는 유틸리티. Windows 10/11 x64 |
 
 최신 파일은 [Releases](../../releases) 탭의 맨 위 릴리스에 있습니다.
 
 ## 설치
 
-`.vsix`는 VS Code 확장 설치 파일입니다.
+**`.exe`** 는 Windows 설치 파일입니다. 내려받아 실행하면 마법사가 안내합니다.
+.NET 런타임이 포함되어 있어 따로 설치할 필요가 없고, 제거는 Windows의
+`설정 → 앱 → 설치된 앱`에서 합니다.
+
+**`.vsix`** 는 VS Code 확장 설치 파일입니다.
 
 ```bash
 code --install-extension wmx3-eni-viewer-<버전>.vsix
@@ -25,7 +30,8 @@ code --install-extension wmx3-eni-viewer-<버전>.vsix
 
 ## 태그 규칙
 
-여러 제품이 한 저장소에 모이므로 태그는 `<제품>-v<버전>` 형식입니다 (예: `wmx3-eni-viewer-v1.3.0`).
+여러 제품이 한 저장소에 모이므로 태그는 `<제품>-v<버전>` 형식입니다
+(예: `wmx3-eni-viewer-v1.3.0`, `wmx-switcher-v1.8.0`).
 
 ## 문의
 
