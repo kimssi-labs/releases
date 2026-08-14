@@ -1,30 +1,31 @@
 # kimssi-labs 배포 창구
 
-kimssi-labs에서 만든 도구의 **설치 파일을 공개적으로 내려받는 곳**입니다.
-소스 코드는 비공개이며, 이 저장소에는 코드가 없습니다 — [Releases](../../releases) 탭의 첨부 파일이 전부입니다.
+kimssi-labs 도구의 **설치 파일을 내려받는 곳**입니다.
+이 저장소에 코드는 없고, [Releases](../../releases)에 첨부된 파일이 전부입니다.
 
-## 제품
+## 내려받기
 
-| 제품 | 설명 | 다운로드 |
-|---|---|---|
-| **WMX3ENIViewer** | WMX3 EtherCAT ENI 파일을 VS Code에서 해석·검증하는 확장 (구문 강조, 호버 디코드, 진단, 요약 뷰) | [최신 릴리스](../../releases?q=wmx3-eni-viewer&expanded=true) |
+| 파일 | 설명 |
+|---|---|
+| `wmx3-eni-viewer-<버전>.vsix` | **WMX3ENIViewer** — WMX3 EtherCAT ENI 파일을 VS Code에서 해석·검증하는 확장 (구문 강조, 호버 디코드, 진단, 요약 뷰). VS Code 1.85 이상 |
 
-## 설치 방법
+최신 파일은 [Releases](../../releases) 탭의 맨 위 릴리스에 있습니다.
 
-### `.vsix` — VS Code 확장
+## 설치
+
+`.vsix`는 VS Code 확장 설치 파일입니다.
 
 ```bash
-code --install-extension <내려받은 파일>.vsix
+code --install-extension wmx3-eni-viewer-<버전>.vsix
 ```
 
 또는 VS Code 확장 뷰(Ctrl+Shift+X) 우측 상단 `···` → `Install from VSIX...` → 파일 선택.
 
-업데이트도 같은 방법으로 새 파일을 설치하면 덮어씁니다. 제거는 확장 뷰에서 `Uninstall`.
+업데이트는 새 파일을 같은 방법으로 설치하면 덮어씁니다. 제거는 확장 뷰에서 `Uninstall`.
 
-## 릴리스 태그 규칙
+## 태그 규칙
 
-한 저장소에 여러 제품이 모이므로 태그는 `<제품>-v<버전>` 형식입니다 (예: `wmx3-eni-viewer-v1.2.0`).
-각 릴리스는 해당 제품의 비공개 저장소 CI가 태그 푸시 시 자동으로 올립니다.
+여러 제품이 한 저장소에 모이므로 태그는 `<제품>-v<버전>` 형식입니다 (예: `wmx3-eni-viewer-v1.3.0`).
 
 ## 문의
 
